@@ -18,7 +18,7 @@
 		$userinfo = $postinfo['user'];
 
 		if ($texto == "") {
-			echo "<h3>Tens de escrever alguma coisa antes de comentar!</h3>";
+			echo "<h3>Escrever alguma coisa antes de comentar!</h3>";
 		}else{
 			$query = "INSERT INTO comentarios (user,texto,post,data) VALUES ('$login_cookie','$texto','$id','$hoje')";
 			$data = mysql_query($query) or die();
@@ -26,7 +26,7 @@
 				$not = mysql_query("INSERT INTO notificacoes (`userde`,`userpara`,`tipo`,`post`,`data`) VALUES ('$login_cookie','$userinfo','2','$id','$hoje')");
 				header("Location: comentarios.php?id=".$id);
 			}else{
-				echo "Alguma coisa não correu lá muito bem... Tenta outra vez mais tarde";
+				echo "Alguma coisa não correu muito bem... Tente outra vez mais tarde";
 			}
 		}
 	}
@@ -50,7 +50,7 @@
 	<div id="publish">
 		<form method="POST" enctype="multipart/form-data">
 			<br />
-			<textarea placeholder="Escreve um comentário para este post..." name="texto"></textarea>
+			<textarea placeholder="Escreva um comentário para este post..." name="texto"></textarea>
 			<input type="submit" value="Comentar" name="publish" />
 		</form>
 	</div>
@@ -68,6 +68,6 @@
 		}
 	?>
 	<br />
-	<div id="footer"><p>&copy; Meet new Friends, 2016 - Todos os direitos reservados</p></div><br />
+	<div id="footer"><p>&copy; Meet new Friends, 2021 - Todos os direitos reservados</p></div><br />
 </body>
 </html>

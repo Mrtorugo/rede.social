@@ -6,7 +6,7 @@
 		$pass = $_POST['pass'];
 		$verifica = mysql_query("SELECT * FROM users WHERE email = '$email' AND password='$pass'");
 		if (mysql_num_rows($verifica)<=0) {
-			echo "<h3>Palavra-passe ou e-mail errados!</h3>";
+			echo "<h3>Senha ou e-mail errados!</h3>";
 		}else{
 			setcookie("login",$email);
 			header("location: ./");
@@ -32,12 +32,12 @@
 </head>
 <body>
 	<img src="img/logo.png"><br />
-	<h2>Entra na tua conta</h2>
+	<h2>Entre na sua conta</h2>
 	<form method="POST">
 		<input type="email" placeholder="Endereço email" name="email"><br />
 		<input type="password" placeholder="Palavra-passe" name="pass"><br />
 		<input type="submit" value="Entrar" name="entrar">
 	</form>
-	<h3>Ainda não tens conta? <a href="registar.php">Cria uma hoje!</a></h3>
+	<h3>Ainda não tem conta? <a href="registar.php">Crie uma hoje!</a></h3>
 </body>
 </html>

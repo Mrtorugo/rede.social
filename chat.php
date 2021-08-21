@@ -15,14 +15,14 @@
 		$data = date("Y/m/d");
 
 		if ($msg=="") {
-			echo "<h3>Não podes enviar uma mensagem em branco!</h3>";
+			echo "<h3>Não pode enviar uma mensagem em branco!</h3>";
 		}else{
 			$query = "INSERT INTO mensagens (`de`,`para`,`texto`,`status`,`data`) VALUES ('$login_cookie','$email','".mysql_real_escape_string($msg)."',0,'$data')";
 			$data = mysql_query($query);
 			if ($data) {
 				header("refresh:0;");
 			}else{
-				echo "<h3>Algo não correu muito bem ao enviar a tua mensagem... Desculpa</h3>".mysql_error();
+				echo "<h3>Algo não correu muito bem ao enviar a sua mensagem... Desculpa</h3>".mysql_error();
 			}
 		}
 	}

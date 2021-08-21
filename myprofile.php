@@ -69,6 +69,6 @@
 		}
 	?>
 	<br />
-	<div id="footer"><p>&copy; Meet new Friends, 2016 - Todos os direitos reservados</p></div><br />
+	<div id="footer"><p>&copy; Meet new Friends, 2021 - Todos os direitos reservados</p></div><br />
 </body>
 </html>

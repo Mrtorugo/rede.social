@@ -51,7 +51,7 @@
 </head>
 <body>
 	<img src="../img/logo.png"><br />
-	<h2>Cria a tua conta</h2>
+	<h2>Crie a tua conta</h2>
 	<form method="POST">
 		<input type="text" placeholder="Primeiro nome" name="nome"><br />
 		<input type="text" placeholder="Apelido" name="apelido"><br />
@@ -59,6 +59,6 @@
 		<input type="password" placeholder="Palavra-passe" name="pass"><br />
 		<input type="submit" value="Criar uma conta" name="criar">
 	</form>
-	<h3>Já tens uma conta? <a href="login.php">Entra aqui!</a></h3>
+	<h3>Já tem uma conta? <a href="login.php">Entra aqui!</a></h3>
 </body>
 </html>

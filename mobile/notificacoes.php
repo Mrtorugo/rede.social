@@ -30,7 +30,7 @@
 		if ($conf) {
 			header("Location: notificacoes.php");
 		}else{
-			echo "<h3>Erro ao eliminar amizade...</h3>";
+			echo "<h3>Erro ao excuir amigo...</h3>";
 		}
 	}
 ?>
@@ -72,7 +72,7 @@
 					<br /><br />
 				</div>';
 			}
-			echo "<br /><h3>Não tens mais pedidos de amizade...</h3><br /><br />";
+			echo "<br /><h3>Não há mais pedidos de amizade...</h3><br /><br />";
 		}
 	?>
 	<br />
@@ -102,6 +102,6 @@
 		}
 	?>
 	<br />
-	<div id="footer"><p>&copy; Meet new Friends, 2016 - Todos os direitos reservados</p></div><br />
+	<div id="footer"><p>&copy; Meet new Friends, 2021 - Todos os direitos reservados</p></div><br />
 </body>
 </html>

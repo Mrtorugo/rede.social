@@ -47,12 +47,12 @@
 		<br />
 		<h2>Chat</h2><br />
 		<span>Enviar uma imagem</span><br /><br /><br />
-		<p>Primeiro, escreve algo (opcional):</p>
+		<p>Primeiro, Escreva algo (opcional):</p>
 		<br />
 		<form method="POST" enctype="multipart/form-data">
-			<input type="text" name="mensagem" placeholder="Escreve aqui a mensagem (opcional)" />
+			<input type="text" name="mensagem" placeholder="Escreva aqui a mensagem (opcional)" />
 			<br /><br /><br />
-			<p>Escolhe uma fotografia:</p>
+			<p>Escolha uma fotografia:</p>
 			<input type="file" name="file" />
 			<br /><br />
 			<input type="submit" name="enviar" value="Enviar" />

@@ -37,7 +37,7 @@
 						echo "<br /><h3>Não foram encontrados resultados...</h3>";
 					}
 				}else{
-					echo "<br /><h3>Tens de escrever pelo menos 3 letras...</h3>";
+					echo "<br /><h3>escreva pelo menos 3 letras...</h3>";
 				}
 			}else{
 				echo '<br /><br /><br />

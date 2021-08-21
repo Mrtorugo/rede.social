@@ -3,20 +3,20 @@
 
 	if (isset($_POST['save'])) {
 		if ($_FILES["file"]["error"]>0) {
-			echo "<script language='javascript' type='text/javascript'>alert('Tens de escolher uma foto...');</script>";
+			echo "<script language='javascript' type='text/javascript'>alert('escolha uma foto...');</script>";
 		}else{
 			$n = rand (0, 10000000);
 			$img = $n.$_FILES["file"]["name"];
 
 			move_uploaded_file($_FILES['file']['tmp_name'], "../upload/".$img);
-			echo "Já está!";
+			echo "Concluido!";
 
 			$query = "UPDATE users SET `img`='$img' WHERE `email`='$login_cookie'";
 			$data = mysql_query($query);
 			if ($data) {
 				header("Location: myprofile.php");
 			}else{
-				echo "<script language='javascript' type='text/javascript'>alert('Ocorreu um erro ao atualizar a tua foto...');</script>";
+				echo "<script language='javascript' type='text/javascript'>alert('Ocorreu um erro ao atualizar a sua foto...');</script>";
 			}
 		}
 	}
@@ -32,16 +32,16 @@
 		</style>
 	</header>
 	<body>
-		<h2>Altera a tua fotografia de rosto...</h2>
+		<h2>Altere a sua foto de perfil...</h2>
 		<form method="POST" enctype="multipart/form-data" id="perfil">
 			<br />
-			<h3>Mostra ao mundo quem és</h3><br />
-			<h3>adicionado uma foto de rosto...</h3><br /><br />
+			<h3>Mostre ao mundo quem voce é!</h3><br />
+			<h3>adicionado uma foto de perfil...</h3><br /><br />
 			<input type="file" name="file" /><br /><br /><br />
 			<input type="submit" value="Guardar" name="save" />
 			<br /><br />
 		</form>
 		<br /><br /><br />
-		<p>&copy; Meet new Friends, 2016 - Todos os direitos reservados</p>
+		<p>&copy; Meet new Friends, 2021 - Todos os direitos reservados</p>
 	</body>
 </html>

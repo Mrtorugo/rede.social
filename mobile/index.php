@@ -51,7 +51,7 @@
 				if ($data) {
 					header("Location: ./");
 				}else{
-					echo "Alguma coisa não correu lá muito bem... Tenta outra vez mais tarde";
+					echo "Alguma coisa não correu muito bem... Tenta outra vez mais tarde";
 				}
 			}
 		}

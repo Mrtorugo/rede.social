@@ -31,10 +31,10 @@
 						echo '<a href="profile.php?id='.$results["id"].'" name="p"><br /><p name="p"><h3>'.$results["nome"].' '.$results["apelido"].'</h3></p><br /></a><br /><hr /><br />';
 					}
 				}else{
-					echo "<br /><h3>Não foram encontrados resultados...</h3>";
+					echo "<br /><h3>Não foi encontrados resultados...</h3>";
 				}
 			}else{
-				echo "<br /><h3>Tens de escrever pelo menos 3 letras...</h3>";
+				echo "<br /><h3>escreva pelo menos 3 letras...</h3>";
 			}
 		?>
 	</body>

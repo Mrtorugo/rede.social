@@ -50,7 +50,7 @@
 </head>
 <body>
 	<img name="p" src="../img/logo.png"><br />
-	<h2>Altera as tuas definições</h2>
+	<h2>Altere as suas definições</h2>
 	<form method="POST">
 		<input type="text" placeholder="Primeiro nome" value="<?php echo $info['nome']; ?>" name="nome"><br />
 		<input type="text" placeholder="Apelido" value="<?php echo $info['apelido']; ?>" name="apelido"><br />

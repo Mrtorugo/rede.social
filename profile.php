@@ -183,11 +183,11 @@
 		}elseif ($amigos==0){
 			echo '<div class="pub" id="'.$id.'">
 						<p>Aviso sobre as amizades...</p>
-						<span>Tens de ser amigo/a do/a '.$nome.' para poderes ver as suas publicações...</span><br />
+						<span>Tem que de ser amigo/a do/a '.$nome.' para poderes ver as suas publicações...</span><br />
 					</div>';
 		}
 	?>
 	<br />
-	<div id="footer"><p>&copy; Meet new Friends, 2016 - Todos os direitos reservados</p></div><br />
+	<div id="footer"><p>&copy; Meet new Friends, 2021 - Todos os direitos reservados</p></div><br />
 </body>
 </html>

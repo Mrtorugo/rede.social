@@ -32,7 +32,7 @@
 		</style>
 	</header>
 	<body>
-		<h2>Altera a tua fotografia de rosto...</h2>
+		<h2>Altera a sua foto de perfil...</h2>
 		<form method="POST" enctype="multipart/form-data" id="perfil">
 			<br />
 			<h3>Mostra ao mundo quem és</h3><br />
@@ -42,6 +42,6 @@
 			<br /><br />
 		</form>
 		<br /><br /><br />
-		<p>&copy; Meet new Friends, 2016 - Todos os direitos reservados</p>
+		<p>&copy; Meet new Friends, 2021 - Todos os direitos reservados</p>
 	</body>
 </html>

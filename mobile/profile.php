@@ -82,7 +82,7 @@
 		if ($conf) {
 			header("Location: profile.php?id=".$id);
 		}else{
-			echo "<h3>Erro ao eliminar amizade...</h3>";
+			echo "<h3>Erro ao excuir amigo...</h3>";
 		}
 	}
 
